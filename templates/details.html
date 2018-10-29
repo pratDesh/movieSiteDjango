@@ -1,0 +1,15 @@
+{% if movie %}
+    <ul>
+        <li>{{ movie.title }}</li>
+        <li>{{movie.year}}</li>
+        <li>{{movie.length}}</li>
+        <li>{{movie.genres}}</li>
+        <li>{{movie.rate}}</li>
+        <li>{{movie.poster}}</li>
+        <li><img border="0" src="{{ movie.poster}}" alt="Cannot load photo, sorry!" width="350" height="500">
+        <li>{{movie.plot}}</li>
+
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

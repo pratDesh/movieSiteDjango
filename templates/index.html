@@ -1,0 +1,9 @@
+{% if movie_list %}
+    <ul>
+    {% for movie in movie_list %}
+        <li><a href="dets/{{movie.title}}">{{ movie.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
